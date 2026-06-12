@@ -1,184 +1,86 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MASEİDTV | Resmî Site</title>
-    <style>
-        /* Genel Tasarım */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {c
-            text-align: center;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            max-width: 500px;
-            width: 100%;
-            animation: fadeIn 1.2s ease-out;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-            background: linear-gradient(90deg, #ff0000, #ffffff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-        }
-
-        p {
-            color: #aaaaaa;
-            margin-bottom: 40px;
-            font-size: 1rem;
-        }
-
-        /* Buton Grubu */
-        .button-group {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-bottom: 40px;
-        }
-
-        .btn {
-            padding: 16px 30px;
-            border-radius: 15px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            display: block;
-        }
-
-        .discord-btn {
-            background-color: #5865F2;
-            color: white;
-        }
-
-        .discord-btn:hover {
-            background-color: #4752c4;
-            transform: scale(1.03);
-            box-shadow: 0 0 20px rgba(88, 101, 242, 0.4);
-        }
-
-        .youtube-btn {
-            background-color: #ff0000;
-            color: white;
-        }
-
-        .youtube-btn:hover {
-            background-color: #cc0000;
-            transform: scale(1.03);
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
-        }
-
-        /* İletişim Formu Tasarımı */
-        .contact-form {
-            text-align: left;
-            margin-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 30px;
-        }
-
-        .contact-form h3 {
-            margin-bottom: 20px;
-            font-size: 1.4rem;
-            color: #fff;
-        }
-
-        .input-group {
-            margin-bottom: 15px;
-        }
-
-        .input-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 0.9rem;
-            color: #bbb;
-        }
-
-        .input-group input, .input-group textarea {
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background: rgba(255, 255, 255, 0.05);
-            color: white;
-            outline: none;
-            box-sizing: border-box;
-        }
-
-        .input-group input:focus, .input-group textarea:focus {
-            border-color: #ff0000;
-        }
-
-        .send-btn {
-            width: 100%;
-            padding: 12px;
-            background: white;
-            color: black;
-            border: none;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .send-btn:hover {
-            background: #ddd;
-        }
-
-        .footer-text {
-            margin-top: 30px;
-            font-size: 0.8rem;
-            color: #555;
-        }
-
-        /* Animasyon */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Mobil Uyumluluk */
-        @media (max-width: 480px) {
-            h1 { font-size: 2.5rem; }
-            .container { padding: 30px 20px; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaseidTV | YouTube Kanalı</title>
+  <meta name="description" content="MaseidTV YouTube kanalı için tanıtım sitesi. Oyun, teknoloji ve eğlence içeriklerini keşfedin." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.jpg" alt="MaseidTV logo" class="site-logo" />
+      <div>
+        <h1 class="brand-title">MASEİDTV</h1>
+        <p>Türkiye'den oyun, teknoloji ve eğlence içerikleri.</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <a class="button button-discord" href="https://discord.com/invite/8sTETNhVBw" target="_blank" rel="noopener">Discord'a Katıl</a>
+      <a class="button button-youtube" href="https://www.youtube.com/@maseidtv" target="_blank" rel="noopener">Kanala Git</a>
+    </div>
+  </header>
 
-    <div class="container">
-        <h1>MASEİDTV</h1>
-        <h1>DAHA FAZLA ÖZELLİK YAKINDA</h1>
-        <p>Topluluğumuza hoş geldin! Aşağıdaki linklerden bize katılabilirsin.Aramıza hoş geldiniz şimdiden</p>
+  <main class="content">
+    <section class="hero-card">
+      <h2>Hoş Geldin!</h2>
+      <p>MaseidTV kanalında her hafta yeni videolarla oyun dünyasını keşfedebilirsin.</p>
+      <div class="hero-actions">
+        <a class="button button-youtube track-click" href="https://www.youtube.com/@maseidtv" target="_blank" rel="noopener">Yeni Video İzle</a>
+      </div>
+      <p id="statusBanner" class="status-banner">Kanalı takip etmeyi, abone olmayı ve yorum bırakmayı unutmayın.</p>
+    </section>
 
-        <div class="button-group">
-            <a href="https://discord.com/invite/8sTETNhVBw" target="_blank" class="btn discord-btn">
-                Discord Kanalımıza Katılın
-            </a>
-            
-            <a href="https://www.youtube.com/@maseidtv" target="_blank" class="btn youtube-btn">
-                Abone Olun
-            </a>
+    <section class="stats-grid">
+      <article class="stat-card">
+        <h3>Abone Sayısı</h3>
+        <p id="subscriberCount" class="stat-value">—</p>
+        <p>Topluluğumuz büyümeye devam ediyor.</p>
+      </article>
+      <article class="stat-card">
+        <h3>Toplam Video</h3>
+        <p id="videoCount" class="stat-value">—</p>
+        <p>Oyun, teknoloji ve eğlence videoları.</p>
+      </article>
+    </section>
+
+    <section id="about" class="info-grid">
+      <article>
+        <h3>Hakkında</h3>
+        <p>MaseidTV, oyun incelemeleri sunar. Hem bilgilendirici hem de keyifli videolar için kanal takip edilebilir.</p>
+      </article>
+
+      <article>
+        <h3>Öne Çıkan</h3>
+        <ul>
+          <li>Haftalık yeni videolar</li>
+          <li>Eğlenceli oyun içerikleri</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Abone Ol</h3>
+        <p>En son videolardan haberdar olmak için kanala abone olmayı unutma. Yorumlarda görüşlerini paylaşabilirsin.</p>
+        <a class="button button-youtube" href="https://www.youtube.com/@maseidtv" target="_blank" rel="noopener">Abone Ol</a>
+      </article>
+
+      <article>
+        <h3>Sosyal Medya</h3>
+        <p>MaseidTV topluluğuna Discord üzerinden katıl ve en yeni haberleri, canlı yayın duyurularını takip et.</p>
+        <div class="social-links">
+          <a class="button button-discord" href="https://discord.com/invite/8sTETNhVBw" target="_blank" rel="noopener">Discord</a>
+          <a class="button button-instagram" href="https://www.instagram.com/maseidtv" target="_blank" rel="noopener">Instagram</a>
         </div>
+      </article>
+    </section>
 
-        <div class="contact-form
-					
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 MaseidTV. YouTube kanal adresi: <a href="https://www.youtube.com/@maseidtv" target="_blank" rel="noopener">@maseidtv</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
