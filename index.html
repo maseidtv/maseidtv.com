@@ -23,24 +23,33 @@
   </header>
 
   <main class="content">
-    <section class="hero-card">
-      <h2>Hoş Geldin!</h2>
-      <p>MaseidTV kanalında her hafta yeni videolarla oyun dünyasını keşfedebilirsin.</p>
-      <div class="hero-actions">
-        <a class="button button-youtube track-click" href="https://www.youtube.com/@maseidtv" target="_blank" rel="noopener">Yeni Video İzle</a>
+    <section class="hero-card hero-card--featured">
+      <div class="hero-copy">
+        <span class="eyebrow">Neon oyun kanalı</span>
+        <h2>Hoş Geldin!</h2>
+        <p>MaseidTV kanalında her hafta yeni videolarla oyun dünyasını keşfedebilirsin.</p>
+        <div class="hero-actions">
+          <a class="button button-youtube track-click" href="https://www.youtube.com/@maseidtv" target="_blank" rel="noopener">Yeni Video İzle</a>
+          <a class="button button-secondary" href="#about">Keşfet</a>
+        </div>
+        <p id="statusBanner" class="status-banner">Kanalı takip etmeyi, abone olmayı ve yorum bırakmayı unutmayın.</p>
       </div>
-      <p id="statusBanner" class="status-banner">Kanalı takip etmeyi, abone olmayı ve yorum bırakmayı unutmayın.</p>
+      <div class="hero-media" aria-label="MaseidTV banner">
+        <img src="banner.png" alt="MaseidTV neon banner" />
+      </div>
     </section>
 
     <section class="stats-grid">
-      <article class="stat-card">
+      <article class="stat-card stat-card--subscribers">
+        <span class="stat-icon">SUB</span>
         <h3>Abone Sayısı</h3>
-        <p id="subscriberCount" class="stat-value">—</p>
+        <p id="subscriberCount" class="stat-value">-</p>
         <p>Topluluğumuz büyümeye devam ediyor.</p>
       </article>
-      <article class="stat-card">
+      <article class="stat-card stat-card--videos">
+        <span class="stat-icon">VID</span>
         <h3>Toplam Video</h3>
-        <p id="videoCount" class="stat-value">—</p>
+        <p id="videoCount" class="stat-value">-</p>
         <p>Oyun, teknoloji ve eğlence videoları.</p>
       </article>
     </section>
@@ -74,7 +83,6 @@
         </div>
       </article>
     </section>
-
   </main>
 
   <footer class="site-footer">
