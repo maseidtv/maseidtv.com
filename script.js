@@ -12,6 +12,29 @@ buttons.forEach((button) => {
   });
 });
 
+const logoRefresh = document.getElementById('logoRefresh');
+if (logoRefresh) {
+  logoRefresh.style.cursor = 'pointer';
+  logoRefresh.addEventListener('click', () => {
+    window.location.reload();
+  });
+}
+
+const disableClipboardActions = (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+};
+
+document.addEventListener('copy', disableClipboardActions);
+document.addEventListener('cut', disableClipboardActions);
+document.addEventListener('paste', disableClipboardActions);
+document.addEventListener('selectstart', (event) => {
+  event.preventDefault();
+});
+document.addEventListener('contextmenu', (event) => {
+  event.preventDefault();
+});
+
 function parseDataText(text) {
   const data = {};
   text.split(/\r?\n/).forEach((line) => {
