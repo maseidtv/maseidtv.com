@@ -33,16 +33,21 @@ card1{
 
 
 .title{
-	width: 500px;
-	display: run-in;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	font-size: 40px;
-	margin: 0 40%;
+	margin: 0;
+	padding: 15px 20px 5px;
+	box-sizing: border-box;
 }
 
 .title-h1{
-font-size: 88px;
+font-size: 64px;
 font-weight: bold;
+letter-spacing: 4px;
+margin: 0;
 
 background: linear-gradient(
     90deg,
@@ -99,7 +104,7 @@ text-shadow:
 }
 
 .duyuru-icerik{
-	
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
@@ -156,7 +161,7 @@ text-shadow:
 }
 
 .son-video-icerik{
-	
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
@@ -515,6 +520,11 @@ card{
 	.duyuru,
 	.son-video{
 		max-width: 100%;
+	}
+
+	.title-h1{
+		font-size: 34px;
+		letter-spacing: 2px;
 	}
 
 	.video-card{

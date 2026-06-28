@@ -1,5 +1,5 @@
 .admin-wrap{
-	max-width: 480px;
+	max-width: 600px;
 	margin: 80px auto;
 	padding: 30px;
 	background-color: #2B2424;
@@ -125,4 +125,34 @@
 }
 .galeri-sil:hover{
 	background-color: #970000;
+}
+.panel-sekmeler{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	justify-content: center;
+	margin-top: 20px;
+	padding-bottom: 15px;
+	border-bottom: ridge 3px #635355;
+}
+.panel-sekme-btn{
+	padding: 8px 14px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #FFFFFF;
+	background-color: #1F0323;
+	border: double 1px;
+	border-color: #635355;
+	border-radius: 5px;
+	font-family: inherit;
+}
+.panel-sekme-btn:hover{
+	background-color: #6C0203;
+}
+.panel-sekme-btn.active{
+	background-color: #300549;
+	border-color: #FFFFFF;
+}
+.panel-sayfa .panel-bolum{
+	margin-top: 20px;
 }

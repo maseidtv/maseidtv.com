@@ -308,6 +308,26 @@ $('logoutLink').addEventListener('click', function () {
 	location.reload();
 });
 
+// PANEL SEKMELERİ (sayfa sayfa geçiş)
+document.querySelectorAll('.panel-sekme-btn').forEach(function (btn) {
+	btn.addEventListener('click', function () {
+		var hedef = btn.getAttribute('data-sayfa');
+
+		document.querySelectorAll('.panel-sekme-btn').forEach(function (b) {
+			b.classList.remove('active');
+		});
+		btn.classList.add('active');
+
+		document.querySelectorAll('.panel-sayfa').forEach(function (sayfa) {
+			if (sayfa.getAttribute('data-sayfa') === hedef) {
+				sayfa.classList.remove('hidden');
+			} else {
+				sayfa.classList.add('hidden');
+			}
+		});
+	});
+});
+
 // ABONE SAYISINI GÜNCELLE
 $('aboneBtn').addEventListener('click', function () {
 	var abone = $('abone').value.trim();
