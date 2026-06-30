@@ -311,6 +311,7 @@ a{
 }
 
 .menu{
+	position: fixed;
 	padding: 20px;
 	display: flex;
 	align-items: center;
