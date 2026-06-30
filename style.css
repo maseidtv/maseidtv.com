@@ -308,6 +308,7 @@ a{
 	z-index: 1000;
 	background-color: #1F0323;
 	text-align: center;
+	border-bottom: 2px solid #160119;
 }
 
 .menu{
