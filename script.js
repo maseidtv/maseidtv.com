@@ -1,3 +1,19 @@
+// HTML dosyaları değiştirilemediği için mobil/tablet uyumluluğu için gereken
+// viewport meta etiketini burada, JS ile ekliyoruz. Bu etiket olmadan mobil
+// tarayıcılar sayfayı masaüstü genişliğinde render edip küçülterek gösterir
+// ve style.css içindeki @media sorguları doğru tetiklenmez.
+(function ensureViewportMeta() {
+	if (document.querySelector('meta[name="viewport"]')) return;
+	var meta = document.createElement('meta');
+	meta.name = 'viewport';
+	meta.content = 'width=device-width, initial-scale=1, maximum-scale=1';
+	if (document.head) {
+		document.head.appendChild(meta);
+	} else {
+		document.write('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">');
+	}
+})();
+
 // Header'ın gerçek yüksekliğine göre içeriğin ve iframe'in konumunu ayarlar
 // (Bu fonksiyon sadece ana sayfada işe yarar, header yoksa hiçbir şey yapmaz)
 function adjustLayout() {
@@ -33,6 +49,11 @@ function showFrame() {
 
 window.addEventListener('load', adjustLayout);
 window.addEventListener('resize', adjustLayout);
+window.addEventListener('orientationchange', function() {
+	// Tarayıcı boyutu döndürme sonrası hemen güncellenmeyebiliyor,
+	// bu yüzden kısa bir gecikmeyle tekrar hesaplıyoruz
+	setTimeout(adjustLayout, 200);
+});
 
 // Menü linkleri: Ana Sayfa / Hakkında / İletişim (eskiden onclick="" ile HTML içindeydi, artık burada)
 // Menüdeki linklerden hangisinin "active" (aktif) görüneceğini ayarlar
@@ -44,6 +65,44 @@ function setActiveNav(activeLink) {
 	if (activeLink) activeLink.classList.add('active');
 }
 
+// Mobil/tablet: hamburger (3 çizgi) butonunu HTML'e dokunmadan JS ile oluşturup menüye ekler
+function closeMobileMenu() {
+	var menu = document.querySelector('.menu');
+	var btn = document.querySelector('.hamburger-btn');
+	if (menu) menu.classList.remove('nav-open');
+	if (btn) btn.setAttribute('aria-expanded', 'false');
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+	var menu = document.querySelector('.menu');
+	if (!menu) return;
+
+	var hamburger = document.createElement('button');
+	hamburger.type = 'button';
+	hamburger.className = 'hamburger-btn';
+	hamburger.setAttribute('aria-label', 'Menüyü aç/kapat');
+	hamburger.setAttribute('aria-expanded', 'false');
+	hamburger.innerHTML = '<span></span><span></span><span></span>';
+
+	menu.insertBefore(hamburger, menu.firstChild);
+
+	hamburger.addEventListener('click', function() {
+		var isOpen = menu.classList.toggle('nav-open');
+		hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+		// Menü açılınca/kapanınca header yüksekliği değişebileceği için
+		// iframe ve içerik konumunu yeniden hesapla
+		adjustLayout();
+	});
+
+	// Menü dışına tıklanınca mobil menüyü kapat
+	document.addEventListener('click', function(e) {
+		if (!menu.classList.contains('nav-open')) return;
+		if (menu.contains(e.target)) return;
+		closeMobileMenu();
+		adjustLayout();
+	});
+});
+
 window.addEventListener('DOMContentLoaded', function() {
 	var anaSayfaLink = document.getElementById('navAnaSayfa');
 	if (anaSayfaLink) {
@@ -51,6 +110,7 @@ window.addEventListener('DOMContentLoaded', function() {
 			e.preventDefault();
 			showHome();
 			setActiveNav(anaSayfaLink);
+			closeMobileMenu();
 		});
 	}
 
@@ -59,6 +119,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		hakkindaLink.addEventListener('click', function() {
 			showFrame();
 			setActiveNav(hakkindaLink);
+			closeMobileMenu();
 		});
 	}
 
@@ -67,6 +128,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		iletisimLink.addEventListener('click', function() {
 			showFrame();
 			setActiveNav(iletisimLink);
+			closeMobileMenu();
 		});
 	}
 });

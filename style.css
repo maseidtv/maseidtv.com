@@ -15,9 +15,18 @@ html{
 
 
 /*ANA SAYFA*/
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	max-width: 100%;
+}
+
 body{
 	padding: 0px;
 	margin: 0px;
+	overflow-x: hidden;
 
 }
 
@@ -48,6 +57,8 @@ font-size: 64px;
 font-weight: bold;
 letter-spacing: 4px;
 margin: 0;
+text-align: center;
+align-items: center;
 
 background: linear-gradient(
     90deg,
@@ -249,6 +260,8 @@ text-shadow:
 /*FOTER*/
 
 foter{
+	display: block;
+	width: 100%;
 	background-color: aqua;
 	text-align: center;
 	position: sticky;
@@ -322,6 +335,41 @@ a{
 
 .abone-link{
 	margin-left: auto;
+}
+
+/*HAMBURGER MENÜ BUTONU (JS ile eklenir, sadece mobil/tabletde görünür)*/
+.hamburger-btn{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	width: 36px;
+	height: 30px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	flex-shrink: 0;
+}
+
+.hamburger-btn span{
+	display: block;
+	width: 100%;
+	height: 3px;
+	border-radius: 2px;
+	background-color: #FFFFFF;
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu.nav-open .hamburger-btn span:nth-child(1){
+	transform: translateY(8px) rotate(45deg);
+}
+.menu.nav-open .hamburger-btn span:nth-child(2){
+	opacity: 0;
+}
+.menu.nav-open .hamburger-btn span:nth-child(3){
+	transform: translateY(-8px) rotate(-45deg);
 }
 
 .link1{
@@ -457,11 +505,13 @@ a{
 }
 card{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	
 }
 .hk-div1 , .hk-div2{
 	padding: 30px;
+	max-width: 100%;
 
 }
 
@@ -514,26 +564,87 @@ card{
 		width: 100%;
 		max-width: 560px;
 	}
+
+	.menu{
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 10px;
+		padding: 15px 20px;
+	}
+
+	.hamburger-btn{
+		display: flex;
+		order: 1;
+	}
+
+	.abone-link{
+		order: 2;
+		margin-left: 0;
+	}
+
+	.link1,
+	.link2,
+	.link3{
+		display: none;
+		order: 3;
+		width: 100%;
+		justify-content: center;
+		font-size: 18px;
+	}
+
+	.menu.nav-open .link1,
+	.menu.nav-open .link2,
+	.menu.nav-open .link3{
+		display: flex;
+	}
+
+	.title-h1{
+		font-size: 46px;
+	}
+
+	.videolar{
+		max-width: 100%;
+	}
+
+	.video-card{
+		width: 180px;
+	}
+
+	.abone{
+		font-size: 32px;
+	}
+
+	.hk-div1,
+	.hk-div2{
+		width: 90%;
+		max-width: 500px;
+		height: auto;
+		min-height: 160px;
+	}
+
+	.hk-div2{
+		margin: 0;
+	}
+
+	.iletisim-form{
+		max-width: 90%;
+	}
 }
 
 @media (max-width: 600px){
 	.menu{
-		flex-wrap: wrap;
-		padding: 10px;
-		gap: 8px;
-		justify-content: center;
+		padding: 12px 15px;
 	}
 
-	.link1{
+	.link1,
+	.link2,
+	.link3{
 		font-size: 15px;
 		padding: 8px;
 	}
 
 	.abone-link{
 		margin-left: 0;
-		width: 100%;
-		display: flex;
-		justify-content: center;
 	}
 
 	.abone-btn{
@@ -580,5 +691,46 @@ card{
 		margin: 30px auto;
 		max-width: 92%;
 		padding: 18px;
+	}
+
+	.hk-div1,
+	.hk-div2{
+		width: 100%;
+		padding: 20px;
+	}
+
+	.iletisim-form{
+		max-width: 100%;
+		padding: 0 15px;
+	}
+
+	.iletisim-btn{
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 380px){
+	.link1,
+	.link2,
+	.link3{
+		font-size: 13px;
+		padding: 6px;
+	}
+
+	.abone-btn{
+		font-size: 15px;
+	}
+
+	.title-h1{
+		font-size: 26px;
+	}
+
+	.video-card{
+		width: 100%;
+		min-width: 0;
+	}
+
+	.videolar-icerik{
+		gap: 10px;
 	}
 }
