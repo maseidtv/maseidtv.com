@@ -324,7 +324,16 @@ a{
 	margin-left: auto;
 }
 
-.link1 {
+.link1{
+	text-decoration: none;
+	color: #FFFFFF;
+	border: double 1px;
+	background-color: #300549;
+	font-size: 20px;
+	border-color: black;
+	border-radius: 30%;
+}
+.link2{
 	
 	text-decoration: none;
 	color: #FFFFFF;
@@ -332,19 +341,42 @@ a{
 	background-color: #300549;
 	font-size: 20px;
 	border-color: black;
-	border-radius: none;
+	border-radius: 30%;	
+}
+.link3{
 	
-	
+	text-decoration: none;
+	color: #FFFFFF;
+	border: double 1px;
+	background-color: #300549;
+	font-size: 20px;
+	border-color: black;
+	border-radius: 30%;
 }
 
 .link1:hover{
 	color: #FFFFFF;
 	background-color: #6C0203;
 	border-color: #000000;
-	border:thick 2px;
 }
-
-
+.link2:hover{
+	color: #FFFFFF;
+	background-color: #6C0203;
+	border-color: #000000;
+}
+.link3:hover{
+	color: #FFFFFF;
+	background-color: #6C0203;
+	border-color: #000000;
+}
+.link1.active,
+.link2.active,
+.link3.active{
+    border-bottom: 2px solid #ff0000;
+	border-top: 2px solid #ff0000;
+	color: #AE00CD;
+	background-color: #6C0203;
+}
 
 /*HAKKINDA & İLETİŞİM - TAM EKRAN IFRAME*/
 #contentFrame{
@@ -356,7 +388,6 @@ a{
 	z-index: 500;
 	background-color: #1F0323;
 }
-
 
 /*İLETİŞİM*/
 

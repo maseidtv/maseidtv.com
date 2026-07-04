@@ -35,12 +35,22 @@ window.addEventListener('load', adjustLayout);
 window.addEventListener('resize', adjustLayout);
 
 // Menü linkleri: Ana Sayfa / Hakkında / İletişim (eskiden onclick="" ile HTML içindeydi, artık burada)
+// Menüdeki linklerden hangisinin "active" (aktif) görüneceğini ayarlar
+function setActiveNav(activeLink) {
+	var navLinks = document.querySelectorAll('#navAnaSayfa, #navHakkinda, #navIletisim');
+	navLinks.forEach(function(link) {
+		link.classList.remove('active');
+	});
+	if (activeLink) activeLink.classList.add('active');
+}
+
 window.addEventListener('DOMContentLoaded', function() {
 	var anaSayfaLink = document.getElementById('navAnaSayfa');
 	if (anaSayfaLink) {
 		anaSayfaLink.addEventListener('click', function(e) {
 			e.preventDefault();
 			showHome();
+			setActiveNav(anaSayfaLink);
 		});
 	}
 
@@ -48,6 +58,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	if (hakkindaLink) {
 		hakkindaLink.addEventListener('click', function() {
 			showFrame();
+			setActiveNav(hakkindaLink);
 		});
 	}
 
@@ -55,6 +66,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	if (iletisimLink) {
 		iletisimLink.addEventListener('click', function() {
 			showFrame();
+			setActiveNav(iletisimLink);
 		});
 	}
 });
@@ -298,3 +310,4 @@ window.addEventListener('DOMContentLoaded', function() {
 		});
 	});
 });
+
