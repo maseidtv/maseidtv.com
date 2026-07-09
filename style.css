@@ -352,7 +352,7 @@ a{
 	background-color: #2a062b;
 	text-align: center;
 	display: flex;
-	flex-direction: column;
+	flex-direction:row-reverse;	
 	border-top: 3px dashed #4f1552;
 	border-bottom: 3px dashed #4f1552;
 	border-radius: 5%;
