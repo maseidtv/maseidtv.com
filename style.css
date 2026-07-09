@@ -272,7 +272,6 @@ text-shadow:
 	height: 110px;
 	border: 10px double #970000;
 	padding: 5px 5px;
-	margin: 5px 5px;
 }
 
 #btn-ytb{
@@ -350,12 +349,15 @@ a{
 	left: 0;
 	width: 100%;
 	z-index: 1000;
-	background-color: #1F0323;
+	background-color: #2a062b;
 	text-align: center;
-	border-bottom: 2px solid #160119;
 	display: flex;
 	flex-direction: column;
+	border-top: 3px dashed #4f1552;
+	border-bottom: 3px dashed #4f1552;
+	border-radius: 5%;
 }
+
 
 .menu{
 	position: static;
@@ -425,6 +427,7 @@ a{
 	text-align: center;
 	align-items:center;
 	justify-content: center;
+	margin: 0px 5px
 }
 .link2{
 	
@@ -442,6 +445,7 @@ a{
 	text-align: center;
 	align-items:center;
 	justify-content: center;
+	margin: 0px 5px
 }
 .link3{
 	
@@ -459,6 +463,7 @@ a{
 	text-align: center;
 	align-items:center;
 	justify-content: center;
+	margin: 0px 5px
 }
 
 .link1:hover{
