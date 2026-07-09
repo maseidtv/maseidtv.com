@@ -20,19 +20,19 @@
 		<!-- Spam botlarına karşı, kullanıcı görmez -->
 		<input type="checkbox" name="botcheck" style="display:none;">
 
-		<label for="ad">Adınız</label>
+		<label for="ad">Adınız *</label>
 		<input type="text" id="ad" name="ad" required>
 
-		<label for="soyad">Soyadınız</label>
+		<label for="soyad">Soyadınız *</label>
 		<input type="text" id="soyad" name="soyad" required>
 
-		<label for="eposta">E-posta Adresiniz</label>
+		<label for="eposta">E-posta Adresiniz *</label>
 		<input type="email" id="eposta" name="email" required>
 
-		<label for="diger-iletisim">Diğer İletişim Bilgisi (isteğe bağlı)</label>
-		<input type="text" id="diger-iletisim" name="diger_iletisim" placeholder="Telefon, Instagram vb.">
+		<label for="diger-iletisim">Telefon Numarası (isteğe bağlı)</label>
+		<input type="number" id="diger-iletisim" name="diger_iletisim">
 
-		<label for="mesaj">Mesajınız</label>
+		<label for="mesaj">Mesajınız *</label>
 		<textarea id="mesaj" name="message" rows="6" required></textarea>
 
 		<button type="submit" class="iletisim-btn">Gönder</button>
