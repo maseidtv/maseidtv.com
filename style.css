@@ -11,6 +11,8 @@ html{
 .hk-h3{
 	font: bold;
 	font-size: 30px;
+	border: 5px, ridge #280a25;
+	border-radius: 50½;
 }
 
 
@@ -59,6 +61,11 @@ letter-spacing: 4px;
 margin: 0;
 text-align: center;
 align-items: center;
+border-top: 3px double #a429a8;
+border-bottom: 3px double #a429a8;
+border-radius: 30%;
+width: 500px;
+height: 100px
 
 background: linear-gradient(
     90deg,
@@ -89,23 +96,23 @@ text-shadow:
 
 
 
-/*ABONELER**/
+/*ABONELER*/
 
 .abone{
-	
 	position:static;
-	display:inline-block;
+	display:inline;
 	font-size: 40px;
+	text-align: center;
 }
 
 /*DUYURULAR*/
 
 .duyuru{
-	background-color: #2B2424;
+	background-color: #280a25;
 	width: 250px;
 	text-align: center;
 	border: ridge 5px;
-	border-color:#635355;
+	border-color:#280a25;
 }
 
 .dy-span{
@@ -128,9 +135,9 @@ text-shadow:
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #2B2424;
+	background-color: #280a25;
 	border: ridge 5px;
-	border-color: #635355;
+	border-color: #280a25;
 	width: 560px;
 	max-width: 100%;
 	box-sizing: border-box;
@@ -160,11 +167,11 @@ text-shadow:
 /*SON VİDEO*/
 
 .son-video{
-	background-color: #2B2424;
+	background-color: #280a25;
 	width: 250px;
 	text-align: center;
 	border: ridge 5px;
-	border-color:#635355;
+	border-color:#280a25;
 	box-sizing: border-box;
 	overflow: hidden;
 }
@@ -212,9 +219,9 @@ text-shadow:
 	align-items: center;
 	text-decoration: none;
 	color: #FFFFFF;
-	background-color: #2B2424;
+	background-color: #280a25;
 	border: ridge 5px;
-	border-color: #635355;
+	border-color: #280a25;
 	width: 220px;
 	padding: 10px;
 	box-sizing: border-box;
@@ -233,7 +240,7 @@ text-shadow:
 }
 
 .video-card:hover{
-	border-color: #FF0000;
+	border-color: #97278c;
 }
 
 /*ABONE OL */
@@ -243,13 +250,21 @@ text-shadow:
 	background-color: #970000;
 	font-size: 25px;
 	color: #FFFFFF;
-	
+	border: 10px double #f2d6ff;
+	border-radius: 50%;
+	width: 110px;
+	height:110px;
 }
 
 .abone-btn:hover{
 	background-color: #FFFFFF;
 	color: #FF0000;
-	
+	border-radius: 50%;
+	width: 110px;
+	height: 110px;
+	border: 10px double #970000;
+	padding: 5px 5px;
+	margin: 5px 5px;
 }
 
 #btn-ytb{
@@ -261,21 +276,25 @@ text-shadow:
 
 foter{
 	display: block;
-	width: 100%;
-	background-color: aqua;
+	width: 100%;;
 	text-align: center;
 	position: sticky;
 }
 
 .foter-p{
-	background-color: #360101;
+	background-color: #2a062b;
 	padding: 15px;
 	font-size: 20px;
+	border-top: 10px double #3a0f3c;
+	border-bottom: 10px double #3a0f3c;
+	border-radius: 30px;
 }
 
 .foter-a{
 	text-decoration: none;
 	color: #FFFFFF;
+	text-align: center;
+	align-items: center;
 	}
 
 .foter-a:hover{
@@ -288,6 +307,8 @@ foter{
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 30px;
+	text-align: center;
+	align-items: center;
 }
 
 .fa-instagram:hover{
@@ -301,6 +322,8 @@ foter{
 	color:#FF0000;
 	font-size: 30px;
 	font-size: 30px;
+	text-align: center;
+	align-items: center;
 }
 
 .fa-square-youtube{
@@ -365,7 +388,7 @@ a{
 	width: 100%;
 	height: 3px;
 	border-radius: 2px;
-	background-color: #FFFFFF;
+	background-color: #661a5e;
 	transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -382,55 +405,76 @@ a{
 .link1{
 	text-decoration: none;
 	color: #FFFFFF;
-	border: double 1px;
-	background-color: #300549;
+	border-top: double 4px;
+	border-bottom: double 5px;
+	background-color: #661c5e;
 	font-size: 20px;
-	border-color: black;
-	border-radius: 30%;
+	border-color: #280a25;
+	border-radius: 50%;
+	width: 150px;
+	height: 60px;
+	display: flex;
+	text-align: center;
+	align-items:center;
+	justify-content: center;
 }
 .link2{
 	
 	text-decoration: none;
 	color: #FFFFFF;
-	border: double 1px;
-	background-color: #300549;
+	border-top: double 4px;
+	border-bottom: double 5px;
+	background-color: #661c5e;
 	font-size: 20px;
-	border-color: black;
-	border-radius: 30%;	
+	border-color: #280a25;
+	border-radius: 50%;	
+	width: 150px;
+	height: 60px;
+	display: flex;
+	text-align: center;
+	align-items:center;
+	justify-content: center;
 }
 .link3{
 	
 	text-decoration: none;
 	color: #FFFFFF;
-	border: double 1px;
-	background-color: #300549;
+	border-top: double 4px;
+	border-bottom: double 5px;
+	background-color: #66195f;
 	font-size: 20px;
 	border-color: black;
-	border-radius: 30%;
+	border-radius: 50%;
+	width: 150px;
+	height: 60px;
+	display: flex;
+	text-align: center;
+	align-items:center;
+	justify-content: center;
 }
 
 .link1:hover{
 	color: #FFFFFF;
-	background-color: #6C0203;
-	border-color: #000000;
+	background-color: #781e70;
+	border-color: #ff40ec;
 }
 .link2:hover{
 	color: #FFFFFF;
-	background-color: #6C0203;
-	border-color: #000000;
+	background-color: #781e70;
+	border-color: #ff40ec;
 }
 .link3:hover{
 	color: #FFFFFF;
-	background-color: #6C0203;
-	border-color: #000000;
+	background-color: #781e70;
+	border-color: #ff40ec;
 }
 .link1.active,
 .link2.active,
 .link3.active{
-    border-bottom: 2px solid #ff0000;
-	border-top: 2px solid #ff0000;
-	color: #AE00CD;
-	background-color: #6C0203;
+    border-bottom: 2px solid #ff40ec;
+	border-top: 2px solid #ff40ec;
+	color: #FFFFFF;
+	background-color: #481343;
 }
 
 /*HAKKINDA & İLETİŞİM - TAM EKRAN IFRAME*/
@@ -453,7 +497,7 @@ a{
 
 .iletisim-form{
 	display: flex;
-	flex-direction: column;
+	flex-direction:column;
 	max-width: 500px;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -463,18 +507,24 @@ a{
 	margin-top: 15px;
 	margin-bottom: 5px;
 	font-size: 18px;
+	display: flex;
+	justify-content: center;
 }
 
 .iletisim-form input,
 .iletisim-form textarea{
 	padding: 10px;
-	font-size: 16px;
-	background-color: #2B2424;
+	font-size: 20px;
+	background-color: #280a25;
 	color: #FFFFFF;
-	border: ridge 3px;
-	border-color: #635355;
+	border: ridge 4px;
+	border-color: #120717;
 	border-radius: 5px;
 	font-family: inherit;
+	display: flex;
+	text-align: left;
+	align-items: left;
+	justify-content: left;
 }
 
 .iletisim-btn{
@@ -484,17 +534,21 @@ a{
 	font-size: 20px;
 	text-decoration: none;
 	color: #FFFFFF;
-	border: double 1px;
-	background-color: #300549;
-	border-color: black;
-	border-radius: none;
+	border:ridge #280a25;
+	background-color: #280a25;
+	border-color: #280a25;
+	border-radius: 50½;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .iletisim-btn:hover{
 	color: #FFFFFF;
-	background-color: #6C0203;
-	border-color: #000000;
-	border: thick 2px;
+	background-color: #411c52;
+	border-color:  #ff40ec;
+	
 }
 
 .iletisim-sonuc{
@@ -508,7 +562,6 @@ a{
 .hk-h1{
 	text-align: center;
 	padding-bottom: 50px;
-	
 }
 card{
 	display: flex;
@@ -523,23 +576,23 @@ card{
 }
 
 .hk-div1{
-	background-color: #2B2424;
-	height: 250px;
+	background-color: #280a25;
+	height: 260px;
 	width: 500PX;
 	text-align: center;
-	border: ridge 5px;
-	border-color:#635355;
+	border: ridge 5px ;
+	border-color:#280a25
 }
 
 .hk-div2{
 	margin: 0px 50px;
-	background-color: #B00D96;
-	height: 250px;
+	background-color: #280a25;
+	height: 260px;
 	width: 500px;
 	text-align: center;
 	border: ridge 5px;
-	border-color:#635355 ;
-	background-color: #2B2424;
+	border-color:#280a25 ;
+	
 }
 .hk-pc{
 	text-align: justify;
@@ -665,6 +718,8 @@ card{
 		padding: 0 15px;
 		box-sizing: border-box;
 	}
+
+
 
 	.duyuru,
 	.son-video{
