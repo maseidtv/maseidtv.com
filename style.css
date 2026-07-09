@@ -211,6 +211,10 @@ text-shadow:
 	border: double #300549 10px;
     padding-bottom: 11px;
     padding-top: 11px;
+	border-radius: 20%;
+	text-align: center;
+	align-items: center;
+	
 }
 
 .video-card{
@@ -225,10 +229,14 @@ text-shadow:
 	width: 220px;
 	padding: 10px;
 	box-sizing: border-box;
+	border-radius: 20%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .video-card img{
-	width: 100%;
+	width: 90%;
 	display: block;
 	border-radius: 4px;
 }
