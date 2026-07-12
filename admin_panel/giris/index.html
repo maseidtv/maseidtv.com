@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin Girişi - MaseidTV</title>
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../admin.css">
+</head>
+<body>
+
+	<div class="admin-wrap">
+
+		<!-- GİRİŞ (normal kullanım) -->
+		<div id="loginView">
+			<h1>Admin Girişi</h1>
+
+			<label for="l-pass">Şifre</label>
+			<input type="password" id="l-pass" autocomplete="off">
+
+			<button class="admin-btn" id="loginBtn">Giriş Yap</button>
+			<p class="admin-sonuc" id="loginSonuc"></p>
+			<span class="admin-link" id="resetLink">Şifreyi unuttum / yeniden kur</span>
+		</div>
+
+		<p class="admin-not">
+			Bu sayfa herkese açık GitHub Pages sitenizde yayınlanıyor; linki bilen herkes açabilir. Asıl koruma,
+			doğru şifreyi bilmeden saklı GitHub Token'ın açılamamasından gelir. Bu sayfanın linkini ana menüye
+			eklemeyin, şifrenizi kimseyle paylaşmayın ve token'ınıza yalnızca bu depo için "Contents: Read and write"
+			izni verin.
+		</p>
+	</div>
+
+<script src="../admin-core.js"></script>
+<script src="giris.js"></script>
+
+</body>
+</html>
