@@ -370,10 +370,12 @@ a{
 
 .title{
 	order: 2;
+	min-width: 0;
 }
 
 .abone-link{
 	margin-left: auto;
+	flex-shrink: 0;
 }
 
 /*HAMBURGER MENÜ BUTONU (JS ile eklenir, sadece mobil/tabletde görünür)*/
@@ -649,9 +651,17 @@ card{
 		order: 1;
 	}
 
+	.title{
+		width: auto;
+		flex: 1 1 auto;
+		min-width: 0;
+		overflow: hidden;
+	}
+
 	.abone-link{
 		order: 3;
 		margin-left: 0;
+		flex-shrink: 0;
 	}
 
 	.link1,
@@ -672,6 +682,10 @@ card{
 
 	.title-h1{
 		font-size: 46px;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		white-space: nowrap;
 	}
 
 	.videolar{
@@ -741,6 +755,10 @@ card{
 	.title-h1{
 		font-size: 34px;
 		letter-spacing: 2px;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		white-space: nowrap;
 	}
 
 	.video-card{
@@ -797,6 +815,10 @@ card{
 
 	.title-h1{
 		font-size: 26px;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		white-space: nowrap;
 	}
 
 	.video-card{
