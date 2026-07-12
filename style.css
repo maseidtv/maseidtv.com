@@ -664,6 +664,13 @@ card{
 		flex-shrink: 0;
 	}
 
+	.abone-btn{
+		font-size: 18px;
+		width: 80px;
+		height: 80px;
+		border-width: 6px;
+	}
+
 	.link1,
 	.link2,
 	.link3{
@@ -681,7 +688,7 @@ card{
 	}
 
 	.title-h1{
-		font-size: 46px;
+		font-size: 40px;
 		width: 100%;
 		max-width: 100%;
 		height: auto;
@@ -734,7 +741,10 @@ card{
 	}
 
 	.abone-btn{
-		font-size: 18px;
+		font-size: 15px;
+		width: 62px;
+		height: 62px;
+		border-width: 4px;
 	}
 
 	.abone{
@@ -753,8 +763,8 @@ card{
 	}
 
 	.title-h1{
-		font-size: 34px;
-		letter-spacing: 2px;
+		font-size: 28px;
+		letter-spacing: 1px;
 		width: 100%;
 		max-width: 100%;
 		height: auto;
@@ -810,11 +820,15 @@ card{
 	}
 
 	.abone-btn{
-		font-size: 15px;
+		font-size: 12px;
+		width: 50px;
+		height: 50px;
+		border-width: 3px;
 	}
 
 	.title-h1{
-		font-size: 26px;
+		font-size: 20px;
+		letter-spacing: 0.5px;
 		width: 100%;
 		max-width: 100%;
 		height: auto;
