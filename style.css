@@ -44,13 +44,12 @@ card1{
 
 
 .title{
-	width: 100%;
+	width: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin: 0;
-	padding: 15px 20px 5px;
 	box-sizing: border-box;
 }
 
@@ -651,7 +650,9 @@ card{
 	}
 
 	.abone-link{
-		order: 2;
+		position: absolute;
+		top: 15px;
+		right: 15px;
 		margin-left: 0;
 	}
 
@@ -717,6 +718,8 @@ card{
 	}
 
 	.abone-link{
+		top: 10px;
+		right: 10px;
 		margin-left: 0;
 	}
 
@@ -785,6 +788,11 @@ card{
 }
 
 @media (max-width: 380px){
+	.abone-link{
+		top: 8px;
+		right: 8px;
+	}
+
 	.link1,
 	.link2,
 	.link3{
