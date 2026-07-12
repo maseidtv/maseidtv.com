@@ -650,9 +650,7 @@ card{
 	}
 
 	.abone-link{
-		position: absolute;
-		top: 15px;
-		right: 15px;
+		order: 3;
 		margin-left: 0;
 	}
 
@@ -718,8 +716,6 @@ card{
 	}
 
 	.abone-link{
-		top: 10px;
-		right: 10px;
 		margin-left: 0;
 	}
 
@@ -788,11 +784,6 @@ card{
 }
 
 @media (max-width: 380px){
-	.abone-link{
-		top: 8px;
-		right: 8px;
-	}
-
 	.link1,
 	.link2,
 	.link3{
