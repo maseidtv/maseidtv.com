@@ -11,6 +11,9 @@
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 25px;
+	color: #94498c;
+	border: dashed 2px  #b53db1;
+	border-radius: 10%;
 }
 .admin-wrap label{
 	display: block;
@@ -24,8 +27,8 @@
 	font-size: 16px;
 	background-color: #1F0323;
 	color: #FFFFFF;
-	border: ridge 3px;
-	border-color: #635355;
+	border: double 5px;
+	border-color:#55194e;
 	border-radius: 5px;
 	box-sizing: border-box;
 	font-family: inherit;
@@ -42,7 +45,8 @@
 	border-color: black;
 }
 .admin-btn:hover{
-	background-color: #6C0203;
+	background-color: #b53db1;
+	color: #000;
 }
 .admin-sonuc{
 	margin-top: 15px;
@@ -57,7 +61,7 @@
 	line-height: 1.6;
 }
 .admin-bilgi{
-	font-size: 14px;
+	font-size: 20px;
 	opacity: 0.8;
 	text-align: center;
 	margin-bottom: 10px;
@@ -69,10 +73,17 @@
 	display: block;
 	text-align: center;
 	margin-top: 15px;
-	font-size: 13px;
+	font-size: 20px;
 	color: #AAAAAA;
 	cursor: pointer;
-	text-decoration: underline;
+	text-decoration: none;
+	background-color: #1F0323;
+	padding: 5px;
+	border: double 5px #55194e;
+}
+.admin-link:hover {
+	color: #843e7c;
+	border-color: #b53db1;
 }
 .hidden{
 	display: none;
@@ -92,10 +103,10 @@
 }
 .admin-btn-ikincil{
 	margin-top: 10px;
-	background-color: #444444;
+	background-color: #4d274c;
 }
 .admin-btn-ikincil:hover{
-	background-color: #666666;
+	background-color: #361935;
 }
 .galeri-satir{
 	display: flex;
@@ -137,21 +148,23 @@
 }
 .panel-sekme-btn{
 	padding: 8px 14px;
-	font-size: 14px;
+	font-size: 20px;
 	cursor: pointer;
 	color: #FFFFFF;
 	background-color: #1F0323;
-	border: double 1px;
-	border-color: #635355;
+	border: double 5px;
+	border-color: #55194e;
 	border-radius: 5px;
 	font-family: inherit;
 }
 .panel-sekme-btn:hover{
-	background-color: #6C0203;
+	background-color: #b53db1;
+	color: #000;
+
 }
 .panel-sekme-btn.active{
 	background-color: #300549;
-	border-color: #FFFFFF;
+	border-color: #b53db1;
 }
 .panel-sayfa .panel-bolum{
 	margin-top: 20px;
